@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+	<data>
+		<variable
+			name="splashmodel"
+			type="com.kemistree.mvvmdemo.viewmodel.SplashViewModel" />
+	</data>
+	
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent">
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="@{splashmodel.splashText}"
+			android:layout_centerInParent="true"
+			android:textSize="15sp"
+			android:textColor="@android:color/black"/>
+	</RelativeLayout>
+</layout>
